@@ -17,7 +17,7 @@ const defaultCols: Column[] = [
     },
     {
         id: "doing",
-        title: "Work in progress",
+        title: "In progress",
     },
     {
         id: "done",
@@ -30,69 +30,69 @@ const defaultTasks: Task[] = [
     {
         id: "1",
         columnId: "todo",
-        content: "List admin APIs for dashboard",
+        content: "BCH 404 due Dec 8",
     },
     {
         id: "2",
         columnId: "todo",
         content:
-            "Develop user registration functionality with OTP delivered on SMS after email confirmation and phone number confirmation",
+            "Research on Embryology",
     },
     {
         id: "3",
         columnId: "doing",
-        content: "Conduct security testing",
+        content: "Community adolescent mental health",
     },
     {
         id: "4",
         columnId: "doing",
-        content: "Analyze competitors",
+        content: "Analyze Lab Samples",
     },
     {
         id: "5",
         columnId: "done",
-        content: "Create UI kit documentation",
+        content: "Obtain Samples",
     },
     {
         id: "6",
         columnId: "done",
-        content: "Dev meeting",
+        content: "Group meeting",
     },
     {
         id: "7",
         columnId: "done",
-        content: "Deliver dashboard prototype",
+        content: "BCH 402 Project",
     },
     {
         id: "8",
         columnId: "todo",
-        content: "Optimize application performance",
+        content: "Report to the Lab",
     },
     {
         id: "9",
         columnId: "todo",
-        content: "Implement data validation",
+        content: "Implement data validation and Visualization",
     },
-    {
-        id: "10",
-        columnId: "todo",
-        content: "Design database schema",
-    },
-    {
-        id: "11",
-        columnId: "todo",
-        content: "Integrate SSL web certificates into workflow",
-    },
-    {
-        id: "12",
-        columnId: "doing",
-        content: "Implement error logging and monitoring",
-    },
-    {
-        id: "13",
-        columnId: "doing",
-        content: "Design and implement responsive UI",
-    },
+    // {
+    //     id: "10",
+    //     columnId: "todo",
+    //     content: "Design database schema",
+    // },
+    // {
+    //     id: "11",
+    //     columnId: "todo",
+    //     content: "Integrate SSL web certificates into workflow",
+    // },
+    // {
+    //     id: "12",
+    //     columnId: "doing",
+    //     content: "Implement error logging and monitoring",
+    // },
+    // {
+    //     id: "13",
+    //     columnId: "doing",
+    //     content: "Design and implement responsive UI",
+    // },
 ];
 
 function KanbanBoard() {

@@ -1,0 +1,173 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+#root {
+  @apply bg-black text-white box-border;
+}
+
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar:horizontal {
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-rose-500 rounded-xl;
+}
+
+.task> ::-webkit-scrollbar-thumb {
+  @apply bg-sky-500 rounded-xl;
+}
+
+
+/*  Mobile Responsive Classes - that will just add in our tailwind Classes  */
+@media screen and (max-width: 768px) {
+
+  /* Total screen size definiition */
+
+  .container {
+    padding: auto;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+    box-sizing: border-box;
+  }
+
+  .button {
+    left: 25%;
+    justify-content: center;
+    position: absolute;
+    top: 32px;
+  }
+
+  .layout {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+
+  /* Better approach set parent container to flex and direction to column-reverse meaning the button which is down in heirachy comes up and the flex totally works as it sould because leaving as colum, it doesn't work properly then the organizer won't be centered correctly */
+
+  .organizer {
+    margin: 120px 0px 32px 0px;
+  }
+
+
+
+  /*  Here is just the random approach for step by step solving responsiveness! remember everything is in layers, one thing before the other! */
+
+
+  /* Stop seeing everything as a whole but simple defined successive layers  */
+
+
+  /* Add Column Button Positioning and size
+  .column-adder {
+
+  }
+
+  .column-directions, .flex-col {
+
+  }
+
+  .column-size, .task-size {
+
+  } */
+
+
+}
+
+
+/*  Ask gpt if you can do something like sm:(a defined css class), this way you may necessiraly not use media query */
+
+
+/*  I asked and I still have quite to learn with tailwind so I just used media queries defaukt to CSS but it works */
+
+
+/*  Again I like the approach to which I used to solve the rewsponsiveness, I left it reasoned step by step approach by listing what I would correct randomly even when not correctly spelt out or solved and just started bit by bit and voila! all solve! never doubt your codes, no one knows right or wrong! { EVEN THE COMPUTER! }there's no right way to do anything just make sure it works which sometimes that's all it is indeed about and make sure it works right but sometimes or lemme say most times for saving yourself stress, just make sure it works */
+
+@media screen and (max-width: 820px) {
+
+  /* Total screen size definiition */
+
+  .container {
+    padding: auto;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+    box-sizing: border-box;
+  }
+
+  .button {
+    left: 25%;
+    justify-content: center;
+    position: absolute;
+    top: 32px;
+  }
+
+  .layout {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+
+  /* Better approach set parent container to flex and direction to column-reverse meaning the button which is down in heirachy comes up and the flex totally works as it sould because leaving as colum, it doesn't work properly then the organizer won't be centered correctly */
+
+  .organizer {
+    margin: 120px 0px 32px 0px;
+  }
+
+
+
+  /*  Here is just the random approach for step by step solving responsiveness! remember everything is in layers, one thing before the other! */
+
+
+  /* Stop seeing everything as a whole but simple defined successive layers  */
+
+
+  /* Add Column Button Positioning and size
+  .column-adder {
+
+  }
+
+  .column-directions, .flex-col {
+
+  }
+
+  .column-size, .task-size {
+
+  } */
+
+
+}
+
+
+@media screen and (max-width: 468px) {
+
+  .layout {
+    grid-template-columns: auto;
+    gap: 20px;
+  }
+
+  /* We are overwriting the asigned min-width with tailwind which is 350px */
+  /*  Lookimg like I'll have to use tailwind */
+
+  /*  Removed the min-width in my tailwind which was 350px */
+  .button {
+    width: 200px;
+  }
+
+}

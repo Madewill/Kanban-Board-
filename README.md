@@ -6,7 +6,7 @@ This project is a simple Kanban board implementation with drag-and-drop function
 ## Demo
 
 
-For a live demo, you can visit: 
+For a live demo, you can visit: https://kanban-board-black-six.vercel.app/
 
 
 ## Getting Started
@@ -19,7 +19,7 @@ To run this project locally, follow these steps:
 
 
     ```bash
-    git clone <repository_url>
+    git clone https://github.com/Madewill/Kanban-Board-
     ```
 
 
